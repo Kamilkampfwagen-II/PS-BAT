@@ -4,7 +4,7 @@ A funky and overengineered method of running powershell scripts inside a batch f
  character is being used to avoid conflicts when splitting the string constructed out of arguments.
 
 # [PS-BAT-PSScript.bat](https://github.com/Kamilkampfwagen-II/PS-BAT/blob/main/PS-BAT-PSScript.bat)
-- Creates a table `$PSScript` containing the script root, name, fullname, args. Since `$PSScriptRoot` or `$MyInvocation.MyCommand.Definition` aren't valid anymore the powershell script contained must be modified to use `$PSScript.Root` instead.
+- Creates a table `$PSScript` containing the script root, name, fullname, args. Since `$PSScriptRoot` or `$MyInvocation.MyCommand.Definition` aren't valid anymore the powershell script contained must be modified to use `$PSScript.Root` instead. `$args` variable works exactly the same as a regular powershell script.
 
 # [PS-BAT-args.bat](https://github.com/Kamilkampfwagen-II/PS-BAT/blob/main/PS-BAT-args.bat)
 - Everything is passed into the `$args` for a simpler approach:
