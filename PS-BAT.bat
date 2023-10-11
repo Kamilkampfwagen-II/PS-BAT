@@ -17,7 +17,7 @@ rem <#
 	goto addArg
 
 	:exec
-	Powershell.exe -ExecutionPolicy Bypass -Command $ErrorActionPreference = 'Continue';$args = '%args%';%helper%
+	Powershell.exe -ExecutionPolicy bypass -Command $ErrorActionPreference = 'Continue';$args = '%args%';%helper%
 	exit
 rem #>
 
